@@ -8,7 +8,9 @@ const CONNECTION = new Connection("https://mainnet.helius-rpc.com/?api-key=c7152
 const WINNERS_FILE = "./app/public/winners.json";
 const ROUND_DURATION = 60;
 
-const keypairData = JSON.parse(fs.readFileSync(process.env.HOME + "/.config/solana/id.json"));
+const keypairData = process.env.KEYPAIR 
+  ? JSON.parse(process.env.KEYPAIR)
+  : JSON.parse(fs.readFileSync(process.env.HOME + "/.config/solana/id.json"));
 const keypair = Keypair.fromSecretKey(Uint8Array.from(keypairData));
 const program = new Program(idl, new AnchorProvider(CONNECTION, new Wallet(keypair), { commitment: "confirmed" }));
 
