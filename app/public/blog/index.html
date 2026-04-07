@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Solana On-Chain Gaming Guides & Resources 2026 | SOLOTTO</title>
+  <meta name="description" content="Learn how provably fair blockchain games work, how Solana smart contracts operate, and why on-chain gaming is the future. In-depth guides from the SOLOTTO team." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://solotto.cc/blog" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Blog — Solana On-Chain Gaming Guides 2026 | SOLOTTO" />
+  <meta property="og:description" content="In-depth guides on provably fair gaming, Solana smart contracts, on-chain randomness, and the future of transparent blockchain games." />
+  <meta property="og:url" content="https://solotto.cc/blog" />
+  <meta property="og:site_name" content="SOLOTTO" />
+  <meta property="og:image" content="https://solotto.cc/og-blog.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@solotto_cc" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "SOLOTTO Blog",
+    "description": "In-depth guides on provably fair gaming, Solana smart contracts, on-chain randomness, and transparent blockchain games.",
+    "url": "https://solotto.cc/blog",
+    "publisher": { "@type": "Organization", "name": "SOLOTTO", "url": "https://solotto.cc" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://solotto.cc" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://solotto.cc/blog" }
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --bg: #080B14; --surface: #0D1117; --border: #1a2030; --green: #14F195; --purple: #9945FF; --text: #E8E8E8; --muted: #888; --faint: #444; }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.75; }
+    a { color: var(--green); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav { position: sticky; top: 0; z-index: 100; background: #080B14EE; border-bottom: 1px solid var(--border); backdrop-filter: blur(10px); }
+    .nav-inner { max-width: 1120px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; height: 60px; }
+    .nav-logo { font-size: 18px; font-weight: 700; letter-spacing: 3px; color: var(--green); font-family: 'Courier New', monospace; }
+    .nav-links { display: flex; gap: 24px; font-size: 12px; letter-spacing: 1px; }
+    .nav-links a { color: var(--muted); transition: color 0.2s; }
+    .nav-links a:hover { color: var(--text); text-decoration: none; }
+    .nav-cta { background: linear-gradient(135deg, #14F195, #00CC77); color: #000; padding: 8px 20px; border-radius: 8px; font-size: 12px; font-weight: 700; letter-spacing: 1px; text-decoration: none; }
+    .wrapper { max-width: 1120px; margin: 0 auto; padding: 48px 24px 80px; position: relative; z-index: 1; }
+    .breadcrumb { font-size: 12px; color: var(--faint); margin-bottom: 32px; }
+    .breadcrumb a { color: var(--faint); }
+    .breadcrumb a:hover { color: var(--green); }
+    .breadcrumb span { margin: 0 6px; }
+    .hero { text-align: center; padding: 48px 0 64px; }
+    .hero-tag { display: inline-block; background: #14F19515; color: var(--green); border: 1px solid #14F19533; padding: 4px 16px; border-radius: 20px; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 20px; }
+    .hero h1 { font-size: clamp(28px, 4vw, 48px); font-weight: 700; color: #fff; line-height: 1.2; margin-bottom: 16px; }
+    .hero p { font-size: 16px; color: var(--muted); max-width: 560px; margin: 0 auto; line-height: 1.7; }
+    .section-title { font-size: 13px; color: var(--muted); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 24px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+    .featured { margin-bottom: 64px; }
+    .featured-card { background: linear-gradient(135deg, #0D1117, #111820); border: 1px solid #14F19533; border-radius: 20px; padding: 40px; display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: center; transition: border-color 0.2s; }
+    .featured-card:hover { border-color: var(--green); text-decoration: none; }
+    .featured-tag { display: inline-block; background: #14F19515; color: var(--green); border: 1px solid #14F19533; padding: 3px 10px; border-radius: 12px; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; }
+    .featured-title { font-size: 26px; font-weight: 700; color: #fff; line-height: 1.3; margin-bottom: 12px; }
+    .featured-desc { font-size: 15px; color: var(--muted); line-height: 1.65; margin-bottom: 20px; }
+    .featured-meta { font-size: 12px; color: var(--faint); display: flex; gap: 16px; }
+    .featured-cta { background: linear-gradient(135deg, #14F195, #00CC77); color: #000; font-weight: 700; font-size: 13px; letter-spacing: 1px; padding: 12px 28px; border-radius: 10px; white-space: nowrap; align-self: flex-start; }
+    .featured-cta:hover { filter: brightness(1.1); text-decoration: none; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; margin-bottom: 64px; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 28px; display: flex; flex-direction: column; transition: border-color 0.2s, transform 0.2s; }
+    .card:hover { border-color: #9945FF55; transform: translateY(-2px); text-decoration: none; }
+    .card-tag { display: inline-block; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; padding: 3px 10px; border-radius: 10px; margin-bottom: 14px; }
+    .tag-gaming { background: #14F19515; color: var(--green); border: 1px solid #14F19533; }
+    .tag-solana { background: #9945FF15; color: var(--purple); border: 1px solid #9945FF33; }
+    .tag-smart { background: #00B3FF15; color: #00B3FF; border: 1px solid #00B3FF33; }
+    .tag-dev { background: #FFD70015; color: #FFD700; border: 1px solid #FFD70033; }
+    .tag-comparison { background: #FF6B3515; color: #FF6B35; border: 1px solid #FF6B3533; }
+    .tag-wallet { background: #14F19515; color: var(--green); border: 1px solid #14F19533; }
+    .tag-eco { background: #9945FF15; color: var(--purple); border: 1px solid #9945FF33; }
+    .card-title { font-size: 18px; font-weight: 700; color: #fff; line-height: 1.35; margin-bottom: 10px; flex: 1; }
+    .card-desc { font-size: 14px; color: var(--muted); line-height: 1.6; margin-bottom: 20px; }
+    .card-meta { font-size: 11px; color: var(--faint); display: flex; gap: 12px; margin-top: auto; }
+    .cta-banner { background: linear-gradient(135deg, #0D1117, #131820); border: 1px solid #9945FF33; border-radius: 20px; padding: 48px; text-align: center; margin-top: 32px; }
+    .cta-banner h2 { font-size: 28px; font-weight: 700; color: #fff; margin-bottom: 12px; }
+    .cta-banner p { color: var(--muted); margin-bottom: 28px; font-size: 16px; max-width: 480px; margin-left: auto; margin-right: auto; }
+    .cta-btn { display: inline-block; background: linear-gradient(135deg, #14F195, #00CC77); color: #000; font-weight: 700; font-size: 14px; letter-spacing: 1px; padding: 14px 40px; border-radius: 10px; transition: filter 0.2s; }
+    .cta-btn:hover { filter: brightness(1.1); text-decoration: none; }
+    footer { border-top: 1px solid var(--border); padding: 32px 24px; text-align: center; font-size: 11px; color: #222; letter-spacing: 1px; line-height: 2.5; font-family: 'Courier New', monospace; }
+    footer a { color: #444; }
+    footer a:hover { color: var(--green); }
+    .grid-bg { position: fixed; inset: 0; pointer-events: none; background-image: linear-gradient(#9945FF06 1px, transparent 1px), linear-gradient(90deg, #9945FF06 1px, transparent 1px); background-size: 40px 40px; z-index: 0; }
+    @media (max-width: 640px) {
+      .featured-card { grid-template-columns: 1fr; }
+      .featured-cta { width: 100%; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+<div class="grid-bg"></div>
+<nav>
+  <div class="nav-inner">
+    <a href="https://solotto.cc" class="nav-logo">◈ SOLOTTO</a>
+    <div class="nav-links">
+      <a href="https://solotto.cc">Home</a>
+      <a href="https://solotto.cc/blog">Blog</a>
+      <a href="https://solotto.cc/#play">Play</a>
+    </div>
+    <a href="https://solotto.cc/#play" class="nav-cta">PLAY NOW</a>
+  </div>
+</nav>
+<div class="wrapper">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="https://solotto.cc">Home</a><span>›</span>Blog
+  </nav>
+
+  <div class="hero">
+    <div class="hero-tag">Knowledge Base</div>
+    <h1>Solana Gaming &amp; Blockchain Guides</h1>
+    <p>In-depth articles on provably fair games, smart contracts, on-chain randomness, and everything you need to understand transparent blockchain gaming in 2026.</p>
+  </div>
+
+  <div class="featured">
+    <div class="section-title">Featured Article</div>
+    <a href="/blog/provably-fair-blockchain-games" class="featured-card">
+      <div>
+        <div class="featured-tag">Blockchain Gaming</div>
+        <div class="featured-title">How Provably Fair Blockchain Games Work in 2026</div>
+        <div class="featured-desc">Learn how cryptographic algorithms and on-chain smart contracts guarantee transparent, tamper-proof outcomes every round — and how to verify any result yourself on Solscan.</div>
+        <div class="featured-meta">
+          <span>📅 April 2026</span>
+          <span>⏱ 7 min read</span>
+        </div>
+      </div>
+      <a href="/blog/provably-fair-blockchain-games" class="featured-cta">READ ARTICLE →</a>
+    </a>
+  </div>
+
+  <div class="section-title">All Articles</div>
+  <div class="grid">
+
+    <a href="/blog/on-chain-randomness-solana" class="card">
+      <span class="card-tag tag-solana">Solana</span>
+      <div class="card-title">What Is On-Chain Randomness on Solana in 2026</div>
+      <div class="card-desc">Slot hashes, VRF oracles, commit-reveal schemes — how Solana generates verifiable randomness for transparent on-chain games.</div>
+      <div class="card-meta"><span>📅 April 2026</span><span>⏱ 8 min</span></div>
+    </a>
+
+    <a href="/blog/solana-smart-contracts-explained" class="card">
+      <span class="card-tag tag-smart">Smart Contracts</span>
+      <div class="card-title">Solana Smart Contracts Explained for Beginners in 2026</div>
+      <div class="card-desc">What are Solana programs, how do accounts work, and why is Solana's model fundamentally different from Ethereum? A complete beginner's guide.</div>
+      <div class="card-meta"><span>📅 April 2026</span><span>⏱ 9 min</span></div>
+    </a>
+
+    <a href="/blog/how-anchor-framework-works-solana" class="card">
+      <span class="card-tag tag-dev">Developer</span>
+      <div class="card-title">How the Anchor Framework Works on Solana in 2026</div>
+      <div class="card-desc">The framework behind most serious Solana programs — how Anchor's IDL, account validation, and PDA derivation make on-chain apps auditable and secure.</div>
+      <div class="card-meta"><span>📅 April 2026</span><span>⏱ 9 min</span></div>
+    </a>
+
+    <a href="/blog/best-solana-dapps-2026" class="card">
+      <span class="card-tag tag-eco">Ecosystem</span>
+      <div class="card-title">Best Solana dApps to Try in 2026</div>
+      <div class="card-desc">DeFi protocols, NFT marketplaces, on-chain games — the best decentralized applications on Solana right now and what makes each one worth trying.</div>
+      <div class="card-meta"><span>📅 April 2026</span><span>⏱ 10 min</span></div>
+    </a>
+
+    <a href="/blog/transparent-blockchain-gaming-vs-traditional" class="card">
+      <span class="card-tag tag-comparison">Comparison</span>
+      <div class="card-title">Transparent Blockchain Gaming vs Traditional Platforms in 2026</div>
+      <div class="card-desc">Trust, custody, fairness, speed — a concrete side-by-side comparison of on-chain games and traditional platforms that goes beyond marketing claims.</div>
+      <div class="card-meta"><span>📅 April 2026</span><span>⏱ 9 min</span></div>
+    </a>
+
+    <a href="/blog/phantom-wallet-on-chain-games" class="card">
+      <span class="card-tag tag-wallet">Wallet</span>
+      <div class="card-title">How to Use Phantom Wallet for On-Chain Games in 2026</div>
+      <div class="card-desc">Complete beginner guide — install Phantom, fund with SOL, sign your first transaction, and play your first on-chain game safely in under 10 minutes.</div>
+      <div class="card-meta"><span>📅 April 2026</span><span>⏱ 8 min</span></div>
+    </a>
+
+    <a href="/blog/solana-transaction-speed-gaming" class="card">
+      <span class="card-tag tag-solana">Solana</span>
+      <div class="card-title">Solana Transaction Speed and Why It Matters for Gaming in 2026</div>
+      <div class="card-desc">How 400ms slots, Proof of History, and Sealevel parallel execution combine to make Solana the only blockchain capable of real-time on-chain gaming.</div>
+      <div class="card-meta"><span>📅 April 2026</span><span>⏱ 8 min</span></div>
+    </a>
+
+    <a href="/blog/what-is-prize-pool-blockchain-games" class="card">
+      <span class="card-tag tag-gaming">Blockchain Gaming</span>
+      <div class="card-title">What Is a Prize Pool in Blockchain Games in 2026</div>
+      <div class="card-desc">Smart contract vaults, automatic distribution, jackpot mechanics — how on-chain prize pools work and why they are more trustworthy than traditional alternatives.</div>
+      <div class="card-meta"><span>📅 April 2026</span><span>⏱ 8 min</span></div>
+    </a>
+
+  </div>
+
+  <div class="cta-banner">
+    <h2>Ready to Experience It Firsthand?</h2>
+    <p>Everything covered in these guides comes to life on SOLOTTO — provably fair, on-chain, instant payouts on Solana mainnet.</p>
+    <a href="https://solotto.cc" class="cta-btn">PLAY ON SOLOTTO →</a>
+  </div>
+</div>
+
+<footer>
+  SOLOTTO · SOLANA · ON-CHAIN GAMING · 2026<br/>
+  <a href="https://solotto.cc">Home</a> · <a href="https://solotto.cc/blog">Blog</a> · <a href="https://twitter.com/solotto_cc">Twitter</a> · Contract: 8djAC69852xokSdr3joE18eMKVNHT5jPggpHidkYLngA
+</footer>
+</body>
+</html>

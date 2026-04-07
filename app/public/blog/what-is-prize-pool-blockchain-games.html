@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Is a Prize Pool in Blockchain Games in 2026 | SOLOTTO</title>
+  <meta name="description" content="How prize pools work in blockchain games on Solana in 2026 — smart contract vaults, distribution mechanics, protocol fees, and why on-chain prize pools are more transparent than traditional alternatives." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://solotto.cc/blog/what-is-prize-pool-blockchain-games" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="What Is a Prize Pool in Blockchain Games in 2026" />
+  <meta property="og:description" content="How prize pools work in blockchain games — smart contract vaults, distribution mechanics, fees, and on-chain transparency." />
+  <meta property="og:url" content="https://solotto.cc/blog/what-is-prize-pool-blockchain-games" />
+  <meta property="og:site_name" content="SOLOTTO" />
+  <meta property="og:image" content="https://solotto.cc/og-blog.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@solotto_cc" />
+  <meta name="twitter:title" content="What Is a Prize Pool in Blockchain Games in 2026" />
+  <meta name="twitter:description" content="Smart contract vaults, fee splits, jackpots — how blockchain prize pools work and why they are more trustworthy than traditional alternatives." />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "What Is a Prize Pool in Blockchain Games in 2026",
+    "description": "How prize pools work in blockchain games on Solana in 2026 — smart contract vaults, distribution mechanics, protocol fees, and why on-chain prize pools are more transparent than traditional alternatives.",
+    "author": { "@type": "Organization", "name": "SOLOTTO", "url": "https://solotto.cc" },
+    "publisher": { "@type": "Organization", "name": "SOLOTTO", "url": "https://solotto.cc", "logo": { "@type": "ImageObject", "url": "https://solotto.cc/logo.png" } },
+    "datePublished": "2026-03-20",
+    "dateModified": "2026-04-01",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://solotto.cc/blog/what-is-prize-pool-blockchain-games" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "What is a prize pool in a blockchain game?", "acceptedAnswer": { "@type": "Answer", "text": "A prize pool in a blockchain game is the total amount of tokens or cryptocurrency held in a smart contract vault, contributed by participants in a round. The contract distributes this pool automatically to the winner or winners according to its programmed rules — no human approval required." } },
+      { "@type": "Question", "name": "How is a blockchain prize pool different from a traditional prize pool?", "acceptedAnswer": { "@type": "Answer", "text": "A traditional prize pool is held by the platform in a bank account or internal ledger — you trust them to pay. A blockchain prize pool is held in a smart contract PDA that no human controls. The distribution happens automatically and is visible on-chain in real time." } },
+      { "@type": "Question", "name": "What percentage of the prize pool do SOLOTTO winners receive?", "acceptedAnswer": { "@type": "Answer", "text": "SOLOTTO winners receive 88% of the total prize pool collected in their room during the round. The remaining 12% is split between a protocol fee (10%) and a growing jackpot fund (2%), both encoded immutably in the smart contract." } }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://solotto.cc" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://solotto.cc/blog" },
+      { "@type": "ListItem", "position": 3, "name": "What Is a Prize Pool in Blockchain Games", "item": "https://solotto.cc/blog/what-is-prize-pool-blockchain-games" }
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --bg: #080B14; --surface: #0D1117; --border: #1a2030; --green: #14F195; --purple: #9945FF; --text: #E8E8E8; --muted: #888; --faint: #444; }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.75; }
+    a { color: var(--green); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav { position: sticky; top: 0; z-index: 100; background: #080B14EE; border-bottom: 1px solid var(--border); backdrop-filter: blur(10px); }
+    .nav-inner { max-width: 1120px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; height: 60px; }
+    .nav-logo { font-size: 18px; font-weight: 700; letter-spacing: 3px; color: var(--green); font-family: 'Courier New', monospace; }
+    .nav-links { display: flex; gap: 24px; font-size: 12px; letter-spacing: 1px; }
+    .nav-links a { color: var(--muted); transition: color 0.2s; }
+    .nav-links a:hover { color: var(--text); text-decoration: none; }
+    .nav-cta { background: linear-gradient(135deg, #14F195, #00CC77); color: #000; padding: 8px 20px; border-radius: 8px; font-size: 12px; font-weight: 700; letter-spacing: 1px; text-decoration: none; }
+    .wrapper { max-width: 780px; margin: 0 auto; padding: 48px 24px 80px; position: relative; z-index: 1; }
+    .breadcrumb { font-size: 12px; color: var(--faint); margin-bottom: 32px; }
+    .breadcrumb a { color: var(--faint); }
+    .breadcrumb a:hover { color: var(--green); }
+    .breadcrumb span { margin: 0 6px; }
+    .article-tag { display: inline-block; background: #14F19515; color: var(--green); border: 1px solid #14F19533; padding: 4px 12px; border-radius: 20px; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px; }
+    h1 { font-size: clamp(26px, 4vw, 40px); font-weight: 700; line-height: 1.25; color: #fff; margin-bottom: 16px; }
+    .article-meta { font-size: 13px; color: var(--muted); margin-bottom: 40px; display: flex; gap: 20px; flex-wrap: wrap; }
+    .content h2 { font-size: 22px; font-weight: 700; color: #fff; margin: 48px 0 16px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+    .content h3 { font-size: 18px; font-weight: 600; color: var(--green); margin: 32px 0 12px; }
+    .content p { margin-bottom: 20px; color: #C8C8C8; }
+    .content ul, .content ol { margin: 0 0 20px 24px; color: #C8C8C8; }
+    .content li { margin-bottom: 8px; }
+    .content strong { color: #fff; }
+    .content code { background: #1a2030; padding: 2px 8px; border-radius: 4px; font-size: 13px; color: var(--green); font-family: 'Courier New', monospace; }
+    .split-visual { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 28px; margin: 32px 0; }
+    .split-visual h3 { font-size: 14px; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; }
+    .split-bar { height: 48px; border-radius: 8px; overflow: hidden; display: flex; margin-bottom: 16px; }
+    .split-segment { display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; transition: flex 0.3s; }
+    .split-legend { display: flex; gap: 20px; flex-wrap: wrap; }
+    .legend-item { display: flex; align-items: center; gap: 8px; font-size: 13px; color: #C8C8C8; }
+    .legend-dot { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; }
+    .callout { background: #14F19508; border: 1px solid #14F19522; border-left: 3px solid var(--green); border-radius: 8px; padding: 20px 24px; margin: 32px 0; }
+    .callout p { margin: 0; font-size: 15px; }
+    .example-box { background: #0a0e18; border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin: 24px 0; }
+    .example-box h4 { font-size: 13px; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px; }
+    .example-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid #1a2030; font-size: 14px; }
+    .example-row:last-child { border-bottom: none; padding-bottom: 0; }
+    .example-row-label { color: #888; }
+    .example-row-value { font-weight: 600; font-family: 'Courier New', monospace; }
+    .example-row-value.green { color: var(--green); }
+    .example-row-value.purple { color: var(--purple); }
+    .example-row-value.gold { color: #FFD700; }
+    .cta-box { background: linear-gradient(135deg, #0D1117, #131820); border: 1px solid #9945FF33; border-radius: 16px; padding: 40px; text-align: center; margin: 48px 0; }
+    .cta-box h3 { font-size: 22px; color: #fff; margin-bottom: 12px; }
+    .cta-box p { color: var(--muted); margin-bottom: 24px; font-size: 15px; }
+    .cta-btn { display: inline-block; background: linear-gradient(135deg, #14F195, #00CC77); color: #000; font-weight: 700; font-size: 14px; letter-spacing: 1px; padding: 14px 36px; border-radius: 10px; transition: filter 0.2s; }
+    .cta-btn:hover { filter: brightness(1.1); text-decoration: none; }
+    .faq { margin: 48px 0; }
+    .faq h2 { font-size: 22px; font-weight: 700; color: #fff; margin-bottom: 24px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+    .faq-item { border: 1px solid var(--border); border-radius: 10px; margin-bottom: 12px; overflow: hidden; }
+    .faq-q { padding: 16px 20px; font-weight: 600; font-size: 15px; color: #fff; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+    .faq-q:hover { background: #0D1117; }
+    .faq-a { padding: 0 20px 16px; color: #C8C8C8; font-size: 14px; line-height: 1.7; display: none; }
+    .faq-item.open .faq-a { display: block; }
+    .faq-item.open .faq-arrow { transform: rotate(180deg); }
+    .faq-arrow { transition: transform 0.2s; color: var(--green); font-size: 12px; }
+    .related { margin: 48px 0; }
+    .related h2 { font-size: 20px; font-weight: 700; color: #fff; margin-bottom: 20px; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+    .related-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px; transition: border-color 0.2s; display: block; }
+    .related-card:hover { border-color: var(--green); text-decoration: none; }
+    .related-card-tag { font-size: 10px; color: var(--green); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px; }
+    .related-card-title { font-size: 14px; color: var(--text); font-weight: 500; line-height: 1.4; }
+    footer { border-top: 1px solid var(--border); padding: 32px 24px; text-align: center; font-size: 11px; color: #222; letter-spacing: 1px; line-height: 2.5; font-family: 'Courier New', monospace; }
+    footer a { color: #444; }
+    footer a:hover { color: var(--green); }
+    .grid-bg { position: fixed; inset: 0; pointer-events: none; background-image: linear-gradient(#9945FF06 1px, transparent 1px), linear-gradient(90deg, #9945FF06 1px, transparent 1px); background-size: 40px 40px; z-index: 0; }
+  </style>
+</head>
+<body>
+<div class="grid-bg"></div>
+<nav>
+  <div class="nav-inner">
+    <a href="https://solotto.cc" class="nav-logo">◈ SOLOTTO</a>
+    <div class="nav-links">
+      <a href="https://solotto.cc">Home</a>
+      <a href="https://solotto.cc/blog">Blog</a>
+      <a href="https://solotto.cc/#play">Play</a>
+    </div>
+    <a href="https://solotto.cc/#play" class="nav-cta">PLAY NOW</a>
+  </div>
+</nav>
+<div class="wrapper">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="https://solotto.cc">Home</a><span>›</span>
+    <a href="https://solotto.cc/blog">Blog</a><span>›</span>
+    What Is a Prize Pool in Blockchain Games
+  </nav>
+  <div class="article-tag">Blockchain Gaming</div>
+  <h1>What Is a Prize Pool in Blockchain Games in 2026</h1>
+  <div class="article-meta">
+    <span>📅 April 2026</span>
+    <span>⏱ 8 min read</span>
+    <span>✍️ SOLOTTO Research</span>
+  </div>
+  <div class="content">
+    <p>In any competitive game or raffle, a <strong>prize pool</strong> is the total value available to be won. In traditional contexts — a poker tournament, a lottery draw, an esports competition — prize pools are held by the organizer and distributed according to their rules. Players trust that the organizer will pay. Sometimes that trust is misplaced.</p>
+    <p>In blockchain games, prize pools work fundamentally differently. Instead of being held by a company, the pool accumulates inside a <strong>smart contract vault</strong> on a public ledger. No human controls it. Distribution happens automatically according to immutable rules. Every SOL that enters and exits is permanently recorded on-chain and visible to anyone.</p>
+    <p>This article explains exactly how blockchain prize pools work, how they are structured on Solana, and why the mechanics of on-chain prize distribution represent a genuine improvement over every traditional alternative.</p>
+
+    <h2>How a Prize Pool Accumulates On-Chain</h2>
+    <p>When a player buys a ticket in an on-chain game, their transaction sends SOL directly to a <strong>Program Derived Address (PDA)</strong> — an account controlled exclusively by the game's <a href="/blog/solana-smart-contracts-explained">smart contract</a>. This PDA is the prize vault. Every ticket purchase in a given round adds to this vault's balance. The growing total is readable by anyone in real time by querying the PDA's balance on Solana.</p>
+    <p>No one can touch this SOL until the smart contract's distribution logic executes. Not the game developer, not the protocol team, not Solana validators. The funds are locked inside the PDA and accessible only through the contract's programmed instructions. This is what makes on-chain prize pools genuinely non-custodial — the smart contract is the custodian, and its rules are mathematically enforced.</p>
+
+    <h2>Prize Pool Distribution: The Mechanics</h2>
+    <p>When a round ends — triggered either by a time condition or a participant count threshold — the smart contract executes its distribution logic. This logic is deterministic: given the same inputs, it always produces the same outputs. There is no discretion, no human judgment, no approval step.</p>
+    <p>A typical on-chain prize pool distribution involves several components, each sent to a different address in the same transaction or a closely following one:</p>
+    <ul>
+      <li><strong>Winner's share</strong> — the majority of the pool, sent directly to the winning wallet</li>
+      <li><strong>Protocol fee</strong> — a percentage retained by the protocol to fund development and operations</li>
+      <li><strong>Jackpot contribution</strong> — a small percentage accumulated into a separate growing prize pool</li>
+      <li><strong>Network fees</strong> — a tiny amount paid to Solana validators for processing the transaction</li>
+    </ul>
+    <p>All of these transfers happen in a single atomic transaction or a tightly sequenced series. Either all succeed or all fail — there is no state where the winner is paid but the protocol fee is not, or vice versa. This atomicity is a core property of <a href="/blog/how-anchor-framework-works-solana">Anchor smart contracts</a> on Solana.</p>
+
+    <h2>SOLOTTO's Prize Pool Structure</h2>
+
+    <div class="split-visual">
+      <h3>Prize Pool Distribution — Every Round</h3>
+      <div class="split-bar">
+        <div class="split-segment" style="flex:88;background:linear-gradient(135deg,#14F195,#00CC77);color:#000;">88%</div>
+        <div class="split-segment" style="flex:10;background:#9945FF;color:#fff;">10%</div>
+        <div class="split-segment" style="flex:2;background:#FFD700;color:#000;">2%</div>
+      </div>
+      <div class="split-legend">
+        <div class="legend-item"><div class="legend-dot" style="background:#14F195;"></div>88% → Round Winner</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#9945FF;"></div>10% → Protocol Fee</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#FFD700;"></div>2% → Jackpot Fund</div>
+      </div>
+    </div>
+
+    <p>These percentages are hardcoded in SOLOTTO's on-chain program. They are not configurable by the development team, not adjustable by governance, and not subject to change without deploying an entirely new contract. Every player who has ever participated in SOLOTTO has operated under these exact same terms — verifiable for every historical round on Solscan.</p>
+
+    <h3>Worked Example: 0.20 SOL Room</h3>
+
+    <div class="example-box">
+      <h4>Example Round — 0.20 SOL Room, 10 Players</h4>
+      <div class="example-row">
+        <span class="example-row-label">Total tickets sold</span>
+        <span class="example-row-value">10 × 0.20 SOL</span>
+      </div>
+      <div class="example-row">
+        <span class="example-row-label">Gross prize pool</span>
+        <span class="example-row-value">2.00 SOL</span>
+      </div>
+      <div class="example-row">
+        <span class="example-row-label">Winner receives (88%)</span>
+        <span class="example-row-value green">1.76 SOL</span>
+      </div>
+      <div class="example-row">
+        <span class="example-row-label">Protocol fee (10%)</span>
+        <span class="example-row-value purple">0.20 SOL</span>
+      </div>
+      <div class="example-row">
+        <span class="example-row-label">Jackpot contribution (2%)</span>
+        <span class="example-row-value gold">0.04 SOL</span>
+      </div>
+      <div class="example-row">
+        <span class="example-row-label">Network fee (Solana)</span>
+        <span class="example-row-value" style="color:#444;">~$0.0003</span>
+      </div>
+    </div>
+
+    <p>In this example, a player who bought a single ticket for 0.20 SOL has a 1-in-10 chance of winning 1.76 SOL — an 8.8x return on a winning ticket. The expected value per ticket is 0.176 SOL, representing the 88% return ratio embedded in the contract. This ratio is consistent across all five SOLOTTO rooms and all rounds, regardless of how many players participate.</p>
+
+    <div class="callout">
+      <p>💡 <strong>Every number above is verifiable on-chain.</strong> Look up any SOLOTTO round on Solscan using the program address <code>8djAC69852xokSdr3joE18eMKVNHT5jPggpHidkYLngA</code> and you can confirm the exact SOL amounts transferred to each address in the distribution transaction.</p>
+    </div>
+
+    <h2>The Jackpot: A Growing Secondary Prize Pool</h2>
+    <p>The 2% jackpot contribution from every round accumulates in a separate on-chain account. This jackpot grows continuously across all rooms and all rounds — every game played on SOLOTTO adds to it. The jackpot creates a secondary incentive layer: players are not just competing for the round prize, they are also contributing to an ever-growing pool that will eventually be distributed through a special jackpot event.</p>
+    <p>Unlike jackpot systems on traditional platforms — where the advertised amount may not reflect actual funds held — SOLOTTO's jackpot balance is readable directly from the on-chain account at any time. The number displayed on the interface corresponds to real SOL sitting in a smart contract vault, not a marketing figure maintained in a database.</p>
+
+    <h2>Why On-Chain Prize Pools Are More Trustworthy</h2>
+    <p>The fundamental advantage of on-chain prize pools is the elimination of counterparty risk. In any traditional prize structure, the organizer is the counterparty — they hold the funds, they execute the distribution, and they could theoretically fail to do so. Insurance, regulation, and reputation help mitigate this risk but cannot eliminate it entirely.</p>
+    <p>On-chain prize pools have no counterparty in the traditional sense. The smart contract is not a party that can default, disappear, or make discretionary decisions. It is a deterministic program that executes its rules identically every time, regardless of who benefits. This removes an entire category of risk that traditional prize structures cannot eliminate.</p>
+
+    <h3>Real-Time Auditability</h3>
+    <p>Traditional prize pools are opaque. You know what the platform tells you about the prize pool size — but you cannot independently verify it. On-chain prize pools are the opposite: the vault balance is queryable at any moment by anyone with a Solana RPC connection. The prize pool figure shown in SOLOTTO's interface is fetched directly from the on-chain account balance — not from a database that could be out of sync with reality.</p>
+
+    <h3>Instant, Automatic Distribution</h3>
+    <p>Traditional prize distributions involve human approval, banking delays, and withdrawal queues. Winners on centralized platforms commonly wait hours to days for payouts to process. On SOLOTTO, prize distribution is a single on-chain transaction that executes automatically when the round ends. The winning wallet receives SOL within seconds — no claim required, no support ticket, no waiting period.</p>
+    <p>This instant distribution is possible because the smart contract holds the funds directly and can release them without any external authorization. The <a href="/blog/solana-transaction-speed-gaming">speed of Solana's network</a> ensures that this distribution transaction confirms in under a second, making the end-to-end experience from round close to prize receipt nearly instantaneous.</p>
+
+    <h2>Multiple Rooms, Multiple Pools</h2>
+    <p>SOLOTTO operates five simultaneous prize rooms, each with its own independent PDA vault and prize pool. The pools do not commingle — a ticket purchased in the 0.05 SOL room contributes only to that room's prize pool, and the winner of that room receives only from that room's accumulated balance.</p>
+    <p>This separation is enforced by the smart contract's PDA derivation scheme. Each room's vault is a distinct PDA derived from the room ID — making it cryptographically impossible for funds to flow between rooms without an explicit contract instruction designed for that purpose, which SOLOTTO's contract does not have.</p>
+    <p>The result is five independently operating prize pools, each with its own risk and reward profile, all running simultaneously on the same program, all auditable on the same block explorer. Players can choose their room based on their preferred prize size and risk tolerance — and verify that the funds in each room's vault match the displayed prize pool before committing their ticket purchase.</p>
+
+    <div class="cta-box">
+      <h3>See a Real On-Chain Prize Pool in Action</h3>
+      <p>Connect your Phantom wallet and watch SOLOTTO's prize pool grow in real time as players join a round. Every SOL is on-chain, every distribution is automatic, every winner is verifiable.</p>
+      <a href="https://solotto.cc" class="cta-btn">PLAY ON SOLOTTO →</a>
+    </div>
+
+    <h2>The Future of On-Chain Prize Pools</h2>
+    <p>Prize pool mechanics in blockchain gaming are still evolving rapidly. In 2026, several emerging designs are pushing the concept further. <strong>Cross-chain prize pools</strong> that accept tokens from multiple networks — unified through bridges or intent-based protocols — allow larger and more diverse player bases to contribute to shared pools. <strong>NFT-gated jackpots</strong> create exclusive prize pools accessible only to holders of specific on-chain assets, creating new incentive structures around digital ownership.</p>
+    <p>Perhaps most interestingly, <strong>DAO-governed prize distribution</strong> is emerging as a model where token holders vote on how jackpot funds are distributed — transforming the prize pool from a fixed mechanical output into a community-governed resource. These models replace the protocol team's discretion with on-chain governance, extending the trustless model all the way to the highest level of prize pool management.</p>
+    <p>What all of these innovations share is the foundational principle that makes on-chain prize pools valuable in the first place: transparency enforced by mathematics, not by promises. As the technology matures and becomes more accessible, this principle will reshape not just gaming but every domain where prize pools, escrow arrangements, and conditional value transfers currently require trusting a counterparty. <a href="/blog/transparent-blockchain-gaming-vs-traditional">The comparison to traditional platforms</a> will only become more stark as on-chain alternatives continue to improve.</p>
+  </div>
+
+  <div class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">What is a prize pool in a blockchain game? <span class="faq-arrow">▼</span></div>
+      <div class="faq-a">A prize pool in a blockchain game is the total amount of cryptocurrency held in a smart contract vault, contributed by participants in a round. The contract distributes this pool automatically to the winner according to its programmed rules — no human approval required.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">How is a blockchain prize pool different from a traditional prize pool? <span class="faq-arrow">▼</span></div>
+      <div class="faq-a">A traditional prize pool is held by the platform — you trust them to pay. A blockchain prize pool is held in a smart contract PDA that no human controls. Distribution happens automatically and every SOL movement is visible on-chain in real time.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">What percentage of the prize pool do SOLOTTO winners receive? <span class="faq-arrow">▼</span></div>
+      <div class="faq-a">SOLOTTO winners receive 88% of the total prize pool collected in their room during the round. The remaining 12% is split between a protocol fee (10%) and a growing jackpot fund (2%), both encoded immutably in the smart contract.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">How quickly do SOLOTTO winners receive their prize? <span class="faq-arrow">▼</span></div>
+      <div class="faq-a">Prize distribution is an on-chain transaction that executes automatically when the round ends. On Solana, this confirms in under one second. Winners see SOL arrive in their Phantom wallet within seconds of the round timer expiring — no claim step, no waiting period.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">Can I verify the prize pool balance myself? <span class="faq-arrow">▼</span></div>
+      <div class="faq-a">Yes. Each room's prize vault is a PDA on Solana mainnet. You can query its SOL balance directly using Solana Explorer or Solscan by looking up the program address 8djAC69852xokSdr3joE18eMKVNHT5jPggpHidkYLngA and inspecting the associated room accounts.</div>
+    </div>
+  </div>
+
+  <div class="related">
+    <h2>Related Articles</h2>
+    <div class="related-grid">
+      <a href="/blog/provably-fair-blockchain-games" class="related-card">
+        <div class="related-card-tag">Gaming</div>
+        <div class="related-card-title">How Provably Fair Blockchain Games Work</div>
+      </a>
+      <a href="/blog/solana-smart-contracts-explained" class="related-card">
+        <div class="related-card-tag">Smart Contracts</div>
+        <div class="related-card-title">Solana Smart Contracts Explained for Beginners</div>
+      </a>
+      <a href="/blog/transparent-blockchain-gaming-vs-traditional" class="related-card">
+        <div class="related-card-tag">Comparison</div>
+        <div class="related-card-title">Transparent Blockchain Gaming vs Traditional Platforms</div>
+      </a>
+      <a href="/blog/phantom-wallet-on-chain-games" class="related-card">
+        <div class="related-card-tag">Wallet</div>
+        <div class="related-card-title">How to Use Phantom Wallet for On-Chain Games</div>
+      </a>
+      <a href="/blog/best-solana-dapps-2026" class="related-card">
+        <div class="related-card-tag">Ecosystem</div>
+        <div class="related-card-title">Best Solana dApps to Try in 2026</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  SOLOTTO · SOLANA · ON-CHAIN GAMING · 2026<br/>
+  <a href="https://solotto.cc">Home</a> · <a href="https://solotto.cc/blog">Blog</a> · <a href="https://twitter.com/solotto_cc">Twitter</a> · Contract: 8djAC69852xokSdr3joE18eMKVNHT5jPggpHidkYLngA
+</footer>
+<script>
+  function toggle(el) { el.parentElement.classList.toggle('open'); }
+</script>
+</body>
+</html>
