@@ -2,6 +2,6 @@
   "rewrites": [
     { "source": "/blog/:path*", "destination": "/blog/:path*.html" },
     { "source": "/blog", "destination": "/blog/index.html" },
-    { "source": "/((?!blog|sitemap|robots|winners).*)", "destination": "/index.html" }
+    { "source": "/((?!blog|sitemap\\.xml|robots\\.txt|winners).*)", "destination": "/index.html" }
   ]
 }
