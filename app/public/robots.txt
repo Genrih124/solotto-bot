@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://solotto.cc/sitemap.xml
+Sitemap: https://www.solotto.cc/sitemap.xml
