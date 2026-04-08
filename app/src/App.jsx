@@ -320,6 +320,7 @@ export default function App() {
             <div style={{ display:"flex", gap:24 }}>
               <span onClick={()=>setPage("landing")} style={{ fontSize:12, color:page==="landing"?"#fff":"#555", cursor:"pointer", letterSpacing:1, borderBottom:page==="landing"?"1px solid #14F195":"none", paddingBottom:2 }}>HOME</span>
               <span onClick={()=>setPage("game")} style={{ fontSize:12, color:page==="game"?"#fff":"#555", cursor:"pointer", letterSpacing:1, borderBottom:page==="game"?"1px solid #14F195":"none", paddingBottom:2 }}>PLAY</span>
+              <a href="/blog" style={{ fontSize:12, color:"#555", cursor:"pointer", letterSpacing:1, textDecoration:"none" }}>BLOG</a>
             </div>
           </div>
           <div style={{ display:"flex", alignItems:"center", gap:12 }}>
