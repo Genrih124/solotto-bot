@@ -1,10 +1,7 @@
 {
-  "redirects": [
-    { "source": "/:path*", "destination": "https://www.solotto.cc/:path*", "permanent": true }
-  ],
   "rewrites": [
     { "source": "/blog/:path*", "destination": "/blog/:path*.html" },
     { "source": "/blog", "destination": "/blog/index.html" },
-    { "source": "/((?!blog|sitemap\\.xml|sitemap2\\.xml|robots\\.txt|winners).*)", "destination": "/index.html" }
+    { "source": "/((?!blog|sitemap|robots|winners|favicon|og).*)", "destination": "/index.html" }
   ]
 }
